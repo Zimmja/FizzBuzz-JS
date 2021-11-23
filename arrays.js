@@ -47,8 +47,23 @@ const searchFilter = (search, candy) => {
   return candy.toLowerCase().startsWith(search.toLowerCase());
 };
 
-console.log(searchCandies("Ma", 10));
-console.log(searchCandies("Ma", 2));
-console.log(searchCandies("S", 10));
-console.log(searchCandies("S", 4));
-console.log(searchCandies("ma", 10));
+// console.log(searchCandies("Ma", 10));
+// console.log(searchCandies("Ma", 2));
+// console.log(searchCandies("S", 10));
+// console.log(searchCandies("S", 4));
+// console.log(searchCandies("ma", 10));
+
+const numbers = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+
+const isEvenNumber = (number) => {
+  return number % 2 == 0;
+}
+
+const evenNumbers = numbers.filter(number => isEvenNumber(number));
+
+// console.log(isEvenNumber(1))
+// console.log(isEvenNumber(2))
+// console.log(isEvenNumber(3))
+// console.log(isEvenNumber(4))
+// console.log(isEvenNumber(5))
+// console.log(isEvenNumber(6))
