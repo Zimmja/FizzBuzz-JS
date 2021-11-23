@@ -16,3 +16,13 @@ const checkLength = (number) => {
 const filterLongNumbers = (phone_numbers) => {
   return phone_numbers.filter(checkLength);
 };
+
+const names = ['Anna', 'Laura', 'Josh', 'Min', 'Karla'];
+
+const generateMessages = (names) => {
+  return names.map(name => {
+    return `Hi ${name}! 50% off our best candies for you today!`
+  });
+};
+
+console.log(generateMessages(names));
